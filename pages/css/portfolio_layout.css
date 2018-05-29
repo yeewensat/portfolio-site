@@ -1,0 +1,27 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  max-width: 960px
+  margin: 0 auto 30px;
+}
+
+artwork {
+  position: relative;
+}
+
+.artwork-img {
+  height: 100px;
+  width: 100%
+  object-fit: cover;
+}
+
+.artwork-title {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.leading {
+  height: 100px;
+  background-color: aqua;
+}
+
