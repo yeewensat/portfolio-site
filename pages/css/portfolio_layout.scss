@@ -1,0 +1,71 @@
+$sanSerifFontFamily: Lato, sans-serif, ;
+$serifFontFamily: Lustria, serif;
+$themeColor: #ffffff;
+$borderWidth: 1px;
+$themePadding: 30px;
+
+$themeMarginTop: 10px;
+$themeMarginRight: auto;
+$themeMarginBottom: 30px;
+$themeMarginLeft: auto;
+$themeMaxWidth: 960px;
+
+$imageWidth: 200px;
+$imageHeight: 100%;
+$imageFit: none;
+
+$fontColor: darken($themeColor, 75%);
+header {
+  display: flex;
+  align-items: center;
+  background-color: darken($themeColor, 40%);
+  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
+}
+
+section {
+  background-color: darken($themeColor, 50%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  border-color: darken($themeColor, 80%);
+  border-style: solid;
+  border-width: $borderWidth+1;
+  max-width: $themeMaxWidth;
+  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;
+  background-color: darken($themeColor, 40%);
+  
+}
+
+.artwork {
+  position: relative;
+  background-color: darken($themeColor, 5%);
+  border-color: darken($themeColor, 50%);
+  border-style: solid;
+  border-width: $borderWidth;
+  padding: $themePadding;
+}
+
+.artwork-img {
+  height: $imageWidth;
+  width: $imageHeight;
+  object-fit: $imageFit;
+}
+
+.artwork-title {
+  font-family: $sanSerifFontFamily;
+  color: $fontColor;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.heading {
+  font-family: $serifFontFamily;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: $themeColor;
+  color: $fontColor;
+}
+
