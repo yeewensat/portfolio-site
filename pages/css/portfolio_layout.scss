@@ -4,9 +4,9 @@ $themeColor: #ffffff;
 $borderWidth: 1px;
 $themePadding: 30px;
 
-$themeMarginTop: 10px;
+$themeMarginTop: 60px;
 $themeMarginRight: auto;
-$themeMarginBottom: 30px;
+$themeMarginBottom: 60px;
 $themeMarginLeft: auto;
 $themeMaxWidth: 960px;
 
@@ -15,15 +15,24 @@ $imageHeight: 100%;
 $imageFit: none;
 
 $fontColor: darken($themeColor, 75%);
-header {
+.header {
   display: flex;
   align-items: center;
   background-color: darken($themeColor, 40%);
   margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
 }
 
-section {
-  background-color: darken($themeColor, 50%);
+.section {
+  font-family: $sanSerifFontFamily;
+  text-align: center;
+  background-color: darken($themeColor, 0%);
+  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;
+  
+}
+
+.navigation {
+	background-color: darken($themeColor, 0%);
+	
 }
 
 .cards {
@@ -35,8 +44,7 @@ section {
   border-width: $borderWidth+1;
   max-width: $themeMaxWidth;
   margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;
-  background-color: darken($themeColor, 40%);
-  
+  background-color: darken($themeColor, 40%);  
 }
 
 .artwork {
@@ -69,3 +77,44 @@ section {
   color: $fontColor;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	background-colour: darken($themeColor, 10%);
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	font-family: $sanSerifFontFamily;
+	display: block;
+	color: darken($themeColor, 75%);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.float-right {
+	float: right;
+}
+
+li a:hover {
+	background-color: darken($themeColor, 10%);
+};
+
+.active {
+	background-color: darken($themeColor, 10%);
+}
+
+.bodytext
+{
+	font-family: $sanSerifFontFamily;
+	text-align: center;
+}

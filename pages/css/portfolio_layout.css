@@ -1,11 +1,17 @@
-header {
+.header {
   display: flex;
   align-items: center;
   background-color: #999999;
-  margin: 10px auto 30px auto; }
+  margin: 60px auto 60px auto; }
 
-section {
-  background-color: gray; }
+.section {
+  font-family: Lato, sans-serif;
+  text-align: center;
+  background-color: white;
+  margin: 60px auto 60px auto; }
+
+.navigation {
+  background-color: white; }
 
 .cards {
   display: grid;
@@ -15,7 +21,7 @@ section {
   border-style: solid;
   border-width: 2px;
   max-width: 960px;
-  margin: 10px auto 30px auto;
+  margin: 60px auto 60px auto;
   background-color: #999999; }
 
 .artwork {
@@ -43,5 +49,41 @@ section {
   align-items: center;
   background-color: #ffffff;
   color: #404040; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-colour: #e6e6e6;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0; }
+
+li {
+  float: left; }
+
+li a {
+  font-family: Lato, sans-serif;
+  display: block;
+  color: #404040;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+.float-right {
+  float: right; }
+
+li a:hover {
+  background-color: #e6e6e6; }
+
+.active {
+  background-color: #e6e6e6; }
+
+.bodytext {
+  font-family: Lato, sans-serif;
+  text-align: center; }
 
 /*# sourceMappingURL=portfolio_layout.css.map */
