@@ -76,10 +76,11 @@ li a {
   float: right; }
 
 li a:hover {
-  background-color: #e6e6e6; }
+  color: #ffffff;
+  background-color: #dbbc8f; }
 
 .active {
-  background-color: #e6e6e6; }
+  color: #c38d41; }
 
 .bodytext {
   font-family: Lato, sans-serif;

@@ -1,6 +1,7 @@
 $sanSerifFontFamily: Lato, sans-serif, ;
 $serifFontFamily: Lustria, serif;
 $themeColor: #ffffff;
+$accentColor: #c38d41;
 $borderWidth: 1px;
 $themePadding: 30px;
 
@@ -105,11 +106,12 @@ li a {
 }
 
 li a:hover {
-	background-color: darken($themeColor, 10%);
+	color:$themeColor;
+	background-color: lighten($accentColor, 20%);
 };
 
 .active {
-	background-color: darken($themeColor, 10%);
+	color: $accentColor;
 }
 
 .bodytext
