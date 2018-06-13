@@ -31,11 +31,6 @@ $fontColor: darken($themeColor, 75%);
   
 }
 
-.navigation {
-	background-color: darken($themeColor, 0%);
-	
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -77,6 +72,58 @@ $fontColor: darken($themeColor, 75%);
   color: $fontColor;
 }
 
+.navigation {
+	background-color: darken($themeColor, 10%);
+	overflow: hidden;
+}
+
+.navigation a {
+	float: left;
+	display: block;
+	color: $accentColor;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: $sanSerifFontFamily;
+}
+
+.navigation a:hover {
+	color:$themeColor;
+	background-color: lighten($accentColor, 20%);
+}
+
+.active {
+	color: $accentColor;
+}
+
+.navigation .icon {
+	display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+	.navigation a:not(:first-child) {display : none; }
+	.navigation a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+/* when the user clicks on the icon, the responsive class is added to the navigation with JavaScript */
+@media screen and (max-width: 600px) {
+	.navigation.responsive {position: relative;}
+	.navigation.resonsive a.icon {
+		position: absolute;
+		right :0;
+		top: 0;
+	}
+	.navigation.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -101,6 +148,7 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
+
 .float-right {
 	float: right;
 }
@@ -110,9 +158,6 @@ li a:hover {
 	background-color: lighten($accentColor, 20%);
 };
 
-.active {
-	color: $accentColor;
-}
 
 .bodytext
 {
