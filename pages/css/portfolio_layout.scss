@@ -73,14 +73,13 @@ $fontColor: darken($themeColor, 75%);
 }
 
 .navigation {
-	background-color: darken($themeColor, 10%);
 	overflow: hidden;
 }
 
 .navigation a {
 	float: left;
 	display: block;
-	color: $accentColor;
+	color: darken($themeColor, 50%);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -88,8 +87,8 @@ $fontColor: darken($themeColor, 75%);
 }
 
 .navigation a:hover {
-	color:$themeColor;
-	background-color: lighten($accentColor, 20%);
+	color: $themeColor;
+	background-color: lighten($accentColor, 30%);
 }
 
 .active {

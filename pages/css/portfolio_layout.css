@@ -47,13 +47,12 @@
   color: #404040; }
 
 .navigation {
-  background-color: #e6e6e6;
   overflow: hidden; }
 
 .navigation a {
   float: left;
   display: block;
-  color: #c38d41;
+  color: gray;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -61,7 +60,7 @@
 
 .navigation a:hover {
   color: #ffffff;
-  background-color: #dbbc8f; }
+  background-color: #e8d3b5; }
 
 .active {
   color: #c38d41; }
