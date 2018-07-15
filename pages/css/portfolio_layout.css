@@ -36,15 +36,13 @@
 
 .artwork-title {
   font-family: Lato, sans-serif;
-  color: #404040; }
+  color: #404040;
+  text-align: center; }
 
-.heading {
-  font-family: Lustria, serif;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  color: #404040; }
+.portfolio-title {
+  font-family: Lato, sans-serif;
+  color: #404040;
+  text-align: center; }
 
 .navigation {
   overflow: hidden; }
@@ -96,7 +94,7 @@ ul {
   width: 100%;
   padding: 0;
   overflow: hidden;
-  background-colour: #e6e6e6;
+  background-color: #e6e6e6;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -123,5 +121,48 @@ li a:hover {
 .bodytext {
   font-family: Lato, sans-serif;
   text-align: center; }
+
+/* slideshows */
+* {
+  box-sizing: border-box; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto; }
+
+/* Hide the images by default */
+.mySlides {
+  display: none; }
+
+.slides {
+  margin: auto;
+  text-align: center; }
+
+.slide-number {
+  font-family: Lato, sans-serif;
+  color: gray;
+  text-align: left; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  font-family: Lato, sans-serif;
+  color: gray;
+  transition: 0.6s ease;
+  /*  border-radius: 3px 3px 3px 3px; */ }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  /* border-radius: 3px 3px 3px 3px; */ }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #dbbc8f; }
 
 /*# sourceMappingURL=portfolio_layout.css.map */

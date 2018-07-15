@@ -61,15 +61,12 @@ $fontColor: darken($themeColor, 75%);
 .artwork-title {
   font-family: $sanSerifFontFamily;
   color: $fontColor;
+  text-align: center;
 }
-
-.heading {
-  font-family: $serifFontFamily;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  background-color: $themeColor;
-  color: $fontColor;
+.portfolio-title {
+	font-family: $sanSerifFontFamily;
+	color: $fontColor;
+	text-align: center;	
 }
 
 .navigation {
@@ -129,7 +126,7 @@ ul {
 	width: 100%;
 	padding: 0;
 	overflow: hidden;
-	background-colour: darken($themeColor, 10%);
+	background-color: darken($themeColor, 10%);
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
@@ -157,9 +154,58 @@ li a:hover {
 	background-color: lighten($accentColor, 20%);
 };
 
-
 .bodytext
 {
 	font-family: $sanSerifFontFamily;
 	text-align: center;
+}
+
+/* slideshows */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+.slides {
+	margin: auto;
+	text-align: center;
+}
+
+.slide-number {
+	font-family:  $sanSerifFontFamily;
+	color: darken($themeColor, 50%);
+	text-align: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  font-family: $sanSerifFontFamily;
+  color: darken($themeColor, 50%);
+  transition: 0.6s ease;
+/*  border-radius: 3px 3px 3px 3px; */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  /* border-radius: 3px 3px 3px 3px; */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: lighten($accentColor, 20%);
 }
