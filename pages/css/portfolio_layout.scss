@@ -43,7 +43,7 @@ $fontColor: darken($themeColor, 75%);
   background-color: darken($themeColor, 0%);  
 }
 
-.artwork {
+.portfolio {
   position: relative;
   background-color: darken($themeColor, 5%);
   border-color: darken($themeColor, 50%);
@@ -52,22 +52,17 @@ $fontColor: darken($themeColor, 75%);
   padding: $themePadding;
 }
 
-.artwork-img {
+.portfolio-img {
   height: $imageWidth;
   width: $imageHeight;
   object-fit: $imageFit;
 }
 
-.artwork-title {
-  font-family: $sanSerifFontFamily;
-  color: $fontColor;
-  text-align: center;
-}
 .portfolio-title {
 	font-family: $sanSerifFontFamily;
 	color: $fontColor;
-	text-align: center;	
-}
+	text-align: center;
+  }
 
 .navigation {
 	overflow: hidden;
@@ -174,10 +169,18 @@ li a:hover {
 }
 
 /* Hide the images by default */
-.mySlides {
+.slideshow {
 	display: none;
+	text-align: center;
 }
-.slides {
+  
+.artwork-title {
+	font-family: $sanSerifFontFamily;
+	color: $fontColor;
+	text-align: center;
+  }
+
+.artwork {
 	margin: auto;
 	text-align: center;
 }
@@ -186,6 +189,11 @@ li a:hover {
 	font-family:  $sanSerifFontFamily;
 	color: darken($themeColor, 50%);
 	text-align: left;
+}
+
+.slideshow-counter {
+	margin: auto;
+	text-align: center;
 }
 
 /* Next & previous buttons */

@@ -1,4 +1,6 @@
 
+slideIndex = 1;
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -10,8 +12,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var i; 
+  var slides = document.getElementsByClassName("slideshow");
   
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}

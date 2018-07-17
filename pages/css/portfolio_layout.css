@@ -21,7 +21,7 @@
   margin: 60px auto 60px auto;
   background-color: white; }
 
-.artwork {
+.portfolio {
   position: relative;
   background-color: #f2f2f2;
   border-color: gray;
@@ -29,15 +29,10 @@
   border-width: 1px;
   padding: 30px; }
 
-.artwork-img {
+.portfolio-img {
   height: 200px;
   width: 100%;
   object-fit: none; }
-
-.artwork-title {
-  font-family: Lato, sans-serif;
-  color: #404040;
-  text-align: center; }
 
 .portfolio-title {
   font-family: Lato, sans-serif;
@@ -134,10 +129,16 @@ li a:hover {
   margin-left: auto; }
 
 /* Hide the images by default */
-.mySlides {
-  display: none; }
+.slideshow {
+  display: none;
+  text-align: center; }
 
-.slides {
+.artwork-title {
+  font-family: Lato, sans-serif;
+  color: #404040;
+  text-align: center; }
+
+.artwork {
   margin: auto;
   text-align: center; }
 
@@ -145,6 +146,10 @@ li a:hover {
   font-family: Lato, sans-serif;
   color: gray;
   text-align: left; }
+
+.slideshow-counter {
+  margin: auto;
+  text-align: center; }
 
 /* Next & previous buttons */
 .prev, .next {
