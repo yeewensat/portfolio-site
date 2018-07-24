@@ -1,7 +1,7 @@
 $sanSerifFontFamily: Lato, sans-serif, ;
 $serifFontFamily: Lustria, serif;
 $themeColor: #ffffff;
-$accentColor: #444444;
+$accentColor: #aca39a;
 $borderWidth: 1px;
 $themePadding: 30px;
 
@@ -163,6 +163,7 @@ p {
 }
 
 p a {
+	text-decoration: none;
 	color: $accentColor;
 }
 #portfolio-desc {

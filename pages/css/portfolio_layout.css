@@ -59,10 +59,10 @@ section {
 
 .navigation a:hover {
   color: #ffffff;
-  background-color: #919191; }
+  background-color: #f1f0ee; }
 
 .active {
-  color: #444444; }
+  color: #aca39a; }
 
 .navigation .icon {
   display: none; }
@@ -117,14 +117,15 @@ li a {
 
 li a:hover {
   color: #ffffff;
-  background-color: #777777; }
+  background-color: #dad6d2; }
 
 p {
   font-family: Lato, sans-serif;
   color: #404040; }
 
 p a {
-  color: #444444; }
+  text-decoration: none;
+  color: #aca39a; }
 
 #portfolio-desc {
   text-align: center; }
@@ -197,7 +198,7 @@ h3 {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  color: #777777; }
+  color: #dad6d2; }
 
 footer {
   font-family: Lato, sans-serif;
