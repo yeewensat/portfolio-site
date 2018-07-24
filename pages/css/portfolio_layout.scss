@@ -1,7 +1,7 @@
 $sanSerifFontFamily: Lato, sans-serif, ;
 $serifFontFamily: Lustria, serif;
 $themeColor: #ffffff;
-$accentColor: #c38d41;
+$accentColor: #444444;
 $borderWidth: 1px;
 $themePadding: 30px;
 
@@ -16,19 +16,32 @@ $imageHeight: 100%;
 $imageFit: none;
 
 $fontColor: darken($themeColor, 75%);
+
+html {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+body {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .header {
   display: flex;
   align-items: center;
   background-color: darken($themeColor, 40%);
-  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
+	margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
 }
 
-.section {
+section {
   font-family: $sanSerifFontFamily;
   text-align: center;
   background-color: darken($themeColor, 0%);
-  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;
-  
+  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
 }
 
 .cards {
@@ -58,11 +71,6 @@ $fontColor: darken($themeColor, 75%);
   object-fit: $imageFit;
 }
 
-.portfolio-title {
-	font-family: $sanSerifFontFamily;
-	color: $fontColor;
-	text-align: center;
-  }
 
 .navigation {
 	overflow: hidden;
@@ -149,10 +157,21 @@ li a:hover {
 	background-color: lighten($accentColor, 20%);
 };
 
-.bodytext
-{
+p {
 	font-family: $sanSerifFontFamily;
-	text-align: center;
+	color: $fontColor;
+}
+
+p a {
+	color: $accentColor;
+}
+#portfolio-desc {
+  text-align: center;
+}
+
+#bodycopy
+{
+	text-align: left;
 }
 
 /* slideshows */
@@ -173,16 +192,32 @@ li a:hover {
 	display: none;
 	text-align: center;
 }
-  
-.artwork-title {
+
+h1 {
 	font-family: $sanSerifFontFamily;
 	color: $fontColor;
+	font-size: 1.4em; // 200%, 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-family: $sanSerifFontFamily;
+	color: darken($themeColor, 50%);
+	font-size: 1.2em;
 	text-align: center;
   }
 
+h3 {
+	font-family: $sanSerifFontFamily;
+	color: darken($themeColor, 50%);
+	font-size: 1.0em;
+	text-align: center;
+	}
+	
 .artwork {
 	margin: auto;
 	text-align: center;
+	padding-top: 20px;
 }
 
 .slide-number {
@@ -216,4 +251,9 @@ li a:hover {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   color: lighten($accentColor, 20%);
+}
+
+footer {
+	font-family: $sanSerifFontFamily;
+	font-size: 0.8em;
 }

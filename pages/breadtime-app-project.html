@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bread Time iOS App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/portfolio_layout.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300|Lustria" rel="stylesheet">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script/script.js"></script>
+    <script src="./script/slideshow-script.js"></script>
+</head>
+<body onload = showSlides(1)>
+	<div class="navigation" id="topNavigation">
+		<a href="./index.html" class="active">HOME</a>
+		<a href="./contact.html">CONTACT</a>		
+		<a href="./about.html">ABOUT</a>
+		<a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">
+			<i class="fa fa-ellipsis-v"></i>
+		</a>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <h1>Bread Time iOS App</h1>
+        <h2>UI &amp; UX Design, iOS Development</h2>
+        <p id="portfolio-desc">Recently, I was introduced to baking Artisan Bread with Ken Forkish’s Flour Water Salt Yeast bread (FWSY) baking method. 
+            FWSY baking process is a long process where you have to follow a schedule for each steps of the baking, eg. when to mix, fold, proof, etc.</p>
+        <p id="portfolio-desc">I live an active lifestyle. I don’t always have the time to sit at home and wait around to execute each of the baking steps, but I do like making these delicious bread.
+                So, to make my life easier and also to learn iOS programming, I created this BreadTime App. It's an app that calculates the bread baking schedule based on Start and End time. 
+                This app makes it super easy for me to plan my outdoor activities around bread baking schedule. This app provides a list of recipes and baking schedule as outlined in Ken Forkish’s FWSY book. 
+                As I experimented with different flour combinations, I added my own recipes to the app.</p>
+        <p id="portfolio-desc">I designed the UI, UX of the app. The app was written using Swift 4.0.</p>
+        <p id="portfolio-desc">View BreadTime App prototype <a href="https://invis.io/JVEBPCLCY">here</a>.</p>
+        <!-- Full-width images with number and caption text -->
+        
+        <div class="slideshow">
+            <h2>Workflow</h2>
+            <div class="slideshow-counter">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="slide-number">1 / 2</span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="artwork">
+                <img src="./img/breadtime-workflow.png" width="80%">
+            </div>
+        </div>
+        <div class="slideshow">
+            <h2>UI</h2>
+            <div class="artwork">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="slide-number">2 / 2</span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="artwork">
+                <img src="./img/breadtime-ui.png" width="80%">
+            </div>
+        </div>
+      </div>
+</body>
+<footer>
+   <p>&copy; 2018 Yee Wen Sat</p>
+</footer>
+</html>
