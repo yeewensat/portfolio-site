@@ -88,7 +88,7 @@ section {
 
 .navigation a:hover {
 	color: $themeColor;
-	background-color: lighten($accentColor, 30%);
+	background-color: $accentColor;
 }
 
 .active {
