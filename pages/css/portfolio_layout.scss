@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   background-color: darken($themeColor, 40%);
-	margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
+  margin: $themeMarginTop $themeMarginRight $themeMarginBottom $themeMarginLeft;  
 }
 
 section {
@@ -70,7 +70,6 @@ section {
   width: $imageHeight;
   object-fit: $imageFit;
 }
-
 
 .navigation {
 	overflow: hidden;
