@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desktop Application Icons Re-design</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/portfolio_layout.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300|Lustria" rel="stylesheet">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script/script.js"></script>
+    <script src="./script/slideshow-script.js"></script>
+</head>
+<body onload = showSlides(1)>
+	<div class="navigation" id="topNavigation">
+		<a href="./index.html" class="active">HOME</a>
+		<a href="./about.html">ABOUT</a>
+		<a href="./contact.html">CONTACT</a>		
+		<a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">
+			<i class="fa fa-ellipsis-v"></i>
+		</a>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <h1>Freelance Design</h1>
+        <h2>Desktop Application Icons Re-design</h2>
+        <p id="portfolio-desc">In this freelance project, my role was to re-design toolbar and other icons for a Windows desktop software for engineers.</p>
+        <!-- Full-width images with number and caption text -->
+        
+        <div class="slideshow">
+            <h3>Before & After</h3>
+            <div class="slideshow-counter">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="slide-number">1 / 3</span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="artwork">
+                <img src="./img/Symmetry-before-after01.png" width="80%">
+            </div>
+        </div>
+        <div class="slideshow">
+            <h3>Before & After</h3>
+            <div class="slideshow-counter">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="slide-number">2 / 3</span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="artwork">
+                <img src="./img/Symmetry-before-after02.png" width="80%">
+            </div>
+      </div>
+        <div class="slideshow">
+            <h3>Before & After</h3>
+            <div class="slideshow-counter">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="slide-number">3 / 3</span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="artwork">
+                <img src="./img/Symmetry-before-after03.png" width="80%">
+            </div>
+      </div>
+    </div>
+</body>
+
+<footer>
+    <p>&copy; 2020 Yee Wen Sat</p>
+</footer>
+     
+</html>
